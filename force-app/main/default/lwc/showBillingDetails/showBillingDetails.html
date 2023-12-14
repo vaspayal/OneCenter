@@ -1,0 +1,18 @@
+<!-- showBillingDetails.html -->
+<template>
+    <div>
+        <lightning-card title="Billing Details" icon-name="utility:money" class="slds-card">
+            <div class="slds-p-around_medium">
+                <template if:true={patientName}>
+                    <p><b>Patient Name:</b> {patientName}</p>
+                    <p><b>Invoice Amount:</b> {invoiceAmount}</p>
+                    <p><b>Entry Date:</b> {entryDate}</p>
+                    <p><b>Exit Date:</b> {exitDate}</p>
+                </template>
+                <template if:false={patientName}>
+                    <p>No billing details available.</p>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+</template>

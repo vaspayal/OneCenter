@@ -1,0 +1,28 @@
+
+:host {
+    display: block;
+    padding: 1rem;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .slds-card {
+    padding: 1rem;
+  }
+  
+  .slds-p-around_medium {
+    padding: 1rem;
+  }
+  
+  .slds-input,
+  .slds-combobox,
+  .slds-textarea {
+    margin-bottom: 1rem;
+  }
+  
+  .slds-button_submit {
+    margin-top: 1rem;
+  }

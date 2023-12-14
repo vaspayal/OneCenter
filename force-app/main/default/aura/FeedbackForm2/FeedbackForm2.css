@@ -1,0 +1,19 @@
+.cFeedbackForm2-slds-card {
+    width: 60%;
+    margin: auto;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cFeedbackForm2-slds-m-around_medium {
+    display: grid;
+    gap: 15px;
+}
+
+lightning-input,
+lightning-textarea,
+lightning-combobox {
+    width: 100%;
+}

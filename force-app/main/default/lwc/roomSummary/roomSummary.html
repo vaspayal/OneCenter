@@ -1,0 +1,6 @@
+<template>
+    <lightning-card title="Room Summary">
+        <lightning-datatable data={patientData} columns={columns} key-field="Id"></lightning-datatable>
+        <lightning-button label="Download PDF" onclick={handleDownload}></lightning-button>
+    </lightning-card>
+</template>

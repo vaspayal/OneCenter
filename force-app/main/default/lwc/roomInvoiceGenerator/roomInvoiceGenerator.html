@@ -1,0 +1,23 @@
+<template>
+  <lightning-card title="Invoice Form">
+      <div class="slds-m-around_medium">
+        <lightning-combobox
+        label="Patient Name"
+        value={selectedPatient}
+        options={patientOptions}
+        onchange={handlePatientChange}
+        placeholder="Select patient"
+        
+
+    ></lightning-combobox>
+    
+          <lightning-input type="date" label="Entry Date" onchange={handleEntryDateChange}></lightning-input>
+          <lightning-input type="date" label="Exit Date" onchange={handleExitDateChange}></lightning-input>
+          <lightning-input type="number" label="Number of Days" value={numberOfDays} disabled></lightning-input>
+          <lightning-input type="number" label="Amount" value={amount} disabled></lightning-input>
+          <lightning-input type="number" label="Discount" value={discount} disabled></lightning-input>
+          <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+          <div if:true={invoiceGeneratedMessage}>{invoiceGeneratedMessage}</div>
+      </div>
+  </lightning-card>
+</template>

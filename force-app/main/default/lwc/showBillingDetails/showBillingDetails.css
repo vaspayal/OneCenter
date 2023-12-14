@@ -1,0 +1,29 @@
+:host {
+    display: block;
+}
+
+.slds-card {
+    width: 300px; /* Adjust width as needed */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slds-card__header {
+    padding: 0.75rem;
+    border-bottom: 1px solid #d8dde6;
+}
+
+.slds-card__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.slds-p-around_medium {
+    padding: 1rem;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+/* Add more styles as needed */

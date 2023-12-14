@@ -1,0 +1,14 @@
+<aura:component controller="FeedbackController" implements="lightning:actionOverride,force:hasRecordId,force:hasSObjectName">
+    <lightning-card title="Feedback Form">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Your Name" value={name}></lightning-input>
+            <lightning-combobox label="Overall Rating" value={rating} options={ratingOptions}></lightning-combobox>
+            <lightning-textarea label="Comments" value={comments}></lightning-textarea>
+            <lightning-input label="Contact Number" type="tel" value={contactNumber}></lightning-input>
+            <lightning-input label="Email Address" type="email" value={email}></lightning-input>
+            <lightning-combobox label="Hospital" value={selectedHospital} options={hospitalOptions} onchange={handleHospitalChange}></lightning-combobox>
+            <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+        </div>
+    </lightning-card>
+
+</aura:component>	

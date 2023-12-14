@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Feedback Form">
+      <lightning-input label="Name" value={name} onchange={handleNameChange}></lightning-input>
+      <lightning-combobox label="Overall Rating" options={ratingOptions} value={rating} onchange={handleRatingChange}></lightning-combobox>
+      <lightning-textarea label="Comments" value={comments} onchange={handleCommentsChange}></lightning-textarea>
+      <lightning-input label="Email" type="email" value={email} onchange={handleEmailChange}></lightning-input>
+      <lightning-combobox label="Hospital" options={hospitalOptions} value={hospital} onchange={handleHospitalChange}></lightning-combobox>
+      <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+    </lightning-card>
+  </template>
